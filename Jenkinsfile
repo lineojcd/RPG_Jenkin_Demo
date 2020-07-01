@@ -21,12 +21,7 @@ pipeline {
                            }
             	 }	
                            
-            steps {
-                echo  "first demo in python"
-                sh  '''pwd
-                       python3 demo.py
-                    '''
-            }
+            
         }
         stage('Test') {
             steps {
