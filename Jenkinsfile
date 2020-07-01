@@ -4,6 +4,7 @@ pipeline {
         stage('build') {
             steps {
                 echo  "first demo in python"
+                pwd
             }
         }
         stage('Test') {
