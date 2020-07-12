@@ -3,19 +3,19 @@ pipeline {
     stages {
         stage('build') {
         parallel { 
-                            stage('PY3 Build') {
+                            stage('PY2 Build') {
                            steps {
                 				echo  "first demo in python3"
                 				sh  '''pwd
-                       				python3 demo.py
+                       				python2 demo.py
                     				'''
             					}
                            }
-                            stage('PY2 Build') {
+                            stage('PY3 Build') {
                            steps {
                 				echo  "first demo in python2"
                 				sh  '''pwd
-                       				python demo.py
+                       				python3 demo.py
                     				'''
             					}
                            }
