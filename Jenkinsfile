@@ -7,7 +7,7 @@ pipeline {
                            steps {
                 				echo  "first demo in python3"
                 				sh  '''pwd
-                       				python2 demo.py
+                       				python demo.py
                     				'''
             					}
                            }
